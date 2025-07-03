@@ -4,40 +4,42 @@
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/Licença-MIT-blue.svg)
 
-> Sistema bancário simples desenvolvido em Python, com funcionalidades essenciais como depósitos, saques, extrato, cadastro de usuários e criação de contas. Ideal para iniciantes praticarem conceitos de lógica, funções, listas e controle de fluxo.
+> Sistema bancário simples desenvolvido em Python, com funcionalidades essenciais como depósitos, saques, extrato, cadastro de usuários e criação de contas. Ideal para iniciantes praticarem conceitos de **lógica de programação**, **funções**, **estruturas condicionais**, **listas** e **manipulação de dados**.
 
 ---
 
 ## 🧩 Funcionalidades
 
-✅ Menu interativo com as seguintes opções:
+✅ Menu interativo com as seguintes operações:
 
 - 📥 **Depósito** em conta
-- 💸 **Saque** com limite de valor e quantidade
-- 📄 **Extrato** com histórico de movimentações
-- 🧑 **Cadastro de usuário** com CPF único
-- 🏦 **Criação de conta bancária** associada ao CPF
+- 💸 **Saque** com limite de valor e quantidade diária
+- 📄 **Extrato** com histórico detalhado de transações
+- 🧑 **Cadastro de usuário** com verificação de CPF único
+- 🏦 **Criação de conta bancária** associada a um usuário existente
+- 🧾 **Listagem de contas** cadastradas
 - ❌ **Encerramento do sistema**
 
 ---
 
-## 📌 Regras do Sistema
+## 📌 Regras de Negócio
 
-- ✅ **Depósito**: apenas valores positivos
+- ✅ **Depósito**: apenas valores **positivos** são aceitos
 - ✅ **Saque**:
   - Máximo de **3 saques diários**
-  - Limite de **R$500,00 por saque**
-  - Não pode ultrapassar o **saldo disponível**
-- ✅ **Usuários** identificados unicamente por **CPF**
+  - Limite de **R$ 500,00 por saque**
+  - O valor **não pode exceder o saldo disponível**
+- ✅ Cada usuário é identificado unicamente pelo **CPF**
 - ✅ Cada conta está associada a **um único usuário**
-- ✅ O **extrato** mostra todas as transações realizadas e o saldo atual
+- ✅ O **extrato** exibe todas as movimentações e o **saldo final**
 
 ---
 
-## 📂 Estrutura do Projeto
+## 🚀 Como Executar
+
+1. Certifique-se de ter o Python instalado (versão 3.10 ou superior).
+2. Clone este repositório ou baixe o arquivo `sistema_bancario.py`.
+3. Execute o script no terminal:
 
 ```bash
-sistema-bancario/
-│
-├── sistema_bancario.py       # Arquivo principal com toda a lógica
-├── README.md                 # Este arquivo de documentação
+python sistema_bancario.py
